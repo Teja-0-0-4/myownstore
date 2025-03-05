@@ -11,7 +11,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors({ origin: 'https://myownstore-teja-0-0-4.vercel.app' })); // Specific origin
+app.use(cors());
 app.use(express.json());
 
 app.use('/api/products', productRoutes);
